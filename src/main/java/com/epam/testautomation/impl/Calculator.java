@@ -1,6 +1,7 @@
-package Calculator;
+package com.epam.testautomation.impl;
 
-import Calculator.Interface.BaseCalculatorInterface;
+
+import com.epam.testautomation.BaseCalculatorInterface;
 
 public class Calculator implements BaseCalculatorInterface {
 

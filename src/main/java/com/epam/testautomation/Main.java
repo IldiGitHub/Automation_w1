@@ -1,5 +1,8 @@
-import Calculator.Calculator;
-import Calculator.ScientificCalculator;
+package com.epam.testautomation;
+
+
+import com.epam.testautomation.impl.Calculator;
+import com.epam.testautomation.impl.ScientificCalculator;
 
 public class Main {
     public static void main (String[] args) {

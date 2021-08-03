@@ -1,4 +1,4 @@
-package Calculator.Interface;
+package com.epam.testautomation;
 
 public interface BaseCalculatorInterface {
     public double addition(double a, double b);
