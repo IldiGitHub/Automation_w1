@@ -5,17 +5,25 @@ import com.epam.testautomation.impl.Calculator;
 import com.epam.testautomation.impl.ScientificCalculator;
 
 public class Main {
-    public static void main (String[] args) {
+
+    /**
+     * Used for putting the result of addition, subtraction, multiplication, division and power of two numbers
+     * using Calculator and ScientificCalculator classes.
+     *
+     * @param args
+     */
+
+    public static void main(String[] args) {
         double a = 3;
         double b = 2;
 
         Calculator calc = new Calculator();
-        System.out.println("Addition: " + a + " + " + b + " = " + calc.addition(a, b));
-        System.out.println("Subtraction: " + a + " - " + b + " = " + calc.subtraction(a, b));
-        System.out.println("Multiplication: " + a + " * " + b + " = " + calc.multiplication(a, b));
-        System.out.println("Division: " + a + " / " + b + " = " + calc.division(a, b));
+        System.out.println(String.format("Addition: %.2f + %.2f = %.2f", a, b, calc.addition(a, b)));
+        System.out.println(String.format("Subtraction: %.2f - %.2f = %.2f", a, b, calc.subtraction(a, b)));
+        System.out.println(String.format("Multiplication: %.2f * %.2f = %.2f", a, b, calc.multiplication(a, b)));
+        System.out.println(String.format("Division: %.2f / %.2f = %.2f", a, b, calc.division(a, b)));
 
         ScientificCalculator scientificCalc = new ScientificCalculator();
-        System.out.println("Power: " + a + " / " + b + " = " + scientificCalc.power(a, b));
+        System.out.println(String.format("Power: %.2f ^ %.2f = %.2f", a, b, scientificCalc.power(a, b)));
     }
 }

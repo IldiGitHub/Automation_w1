@@ -10,7 +10,7 @@ public class ScientificCalculatorTest {
     public void ScientificCalculatorTest(){
         ScientificCalculator scientificCalc = new ScientificCalculator();
         double a = 6;
-        double b= 3;
+        double b = 3;
         Assert.assertEquals(scientificCalc.addition(a, b), 9);
         Assert.assertEquals(scientificCalc.subtraction(a, b), 3);
         Assert.assertEquals(scientificCalc.multiplication(a, b), 18);
