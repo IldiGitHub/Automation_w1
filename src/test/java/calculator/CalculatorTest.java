@@ -1,4 +1,4 @@
-package Calculator;
+package calculator;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ public class CalculatorTest {
     public void CalculatorTest(){
         Calculator calc = new Calculator();
         double a = 3;
-        double b= 2;
+        double b = 2;
         Assert.assertEquals(calc.addition(a, b), 5);
         Assert.assertEquals(calc.subtraction(a, b), 1);
         Assert.assertEquals(calc.multiplication(a, b), 6);

@@ -1,9 +1,9 @@
-package Calculator.Interface;
+package calculator.Interface;
 
 public interface BaseCalculatorInterface {
-    public double addition(double a, double b);
-    public double subtraction(double a, double b);
-    public double multiplication(double a, double b);
-    public double division(double a, double b);
+    double addition(double a, double b);
+    double subtraction(double a, double b);
+    double multiplication(double a, double b);
+    double division(double a, double b);
 }
 

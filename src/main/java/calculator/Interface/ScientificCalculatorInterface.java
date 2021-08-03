@@ -1,5 +1,5 @@
-package Calculator.Interface;
+package calculator.Interface;
 
 public interface ScientificCalculatorInterface extends BaseCalculatorInterface {
-    public double power(double a, double b);
+    double power(double a, double b);
 }
