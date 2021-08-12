@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Test Suite">
+    <test name="Test Basic Calc">
+        <classes>
+            <class name="com.epam.testautomation.ScientificCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Scientific Calc Test">
+        <classes>
+            <class name="com.epam.testautomation.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>
