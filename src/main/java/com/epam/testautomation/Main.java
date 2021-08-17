@@ -1,3 +1,6 @@
+package com.epam.testautomation;
+
+
 import com.epam.testautomation.impl.Calculator;
 import com.epam.testautomation.impl.ScientificCalculator;
 import exceptions.DivideByZeroException;
