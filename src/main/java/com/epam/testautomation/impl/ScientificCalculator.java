@@ -1,6 +1,6 @@
-package calculator;
+package com.epam.testautomation.impl;
 
-import calculator.Interface.ScientificCalculatorInterface;
+import com.epam.testautomation.ScientificCalculatorInterface;
 
 public class ScientificCalculator extends Calculator implements ScientificCalculatorInterface {
     /**

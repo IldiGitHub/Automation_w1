@@ -1,5 +1,6 @@
-package calculator;
+package com.epam.testautomation;
 
+import com.epam.testautomation.impl.ScientificCalculator;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
