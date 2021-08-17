@@ -3,6 +3,7 @@ package com.epam.testautomation;
 
 import com.epam.testautomation.impl.Calculator;
 import com.epam.testautomation.impl.ScientificCalculator;
+import exceptions.DivideByZeroException;
 
 public class Main {
 
@@ -13,7 +14,7 @@ public class Main {
      * @param args
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DivideByZeroException {
         double a = 3;
         double b = 2;
 

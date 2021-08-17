@@ -2,12 +2,14 @@ package com.epam.testautomation.impl;
 
 
 import com.epam.testautomation.BaseCalculatorInterface;
+import exceptions.DivideByZeroException;
 
 public class Calculator implements BaseCalculatorInterface {
 
     /**
      * Addition is a basic operations of arithmetic.
      * The addition of two whole numbers results in the total amount or sum of those values combined.
+     *
      * @param a - augend
      * @param b - addend
      * @return - sum
@@ -20,6 +22,7 @@ public class Calculator implements BaseCalculatorInterface {
     /**
      * Subtraction is a basic operations of arithmetic.
      * Subtraction is an operation used to find the difference between numbers.
+     *
      * @param a - minuend
      * @param b - subtrahend
      * @return - difference
@@ -32,6 +35,7 @@ public class Calculator implements BaseCalculatorInterface {
     /**
      * Multiplication is a basic operations of arithmetic.
      * Multiplication is adding a number with respect to another number, repeatedly.
+     *
      * @param a - multiplier
      * @param b - multiplicand
      * @return - product
@@ -44,12 +48,18 @@ public class Calculator implements BaseCalculatorInterface {
     /**
      * Division is a basic operations of arithmetic.
      * Division is the process of calculating the number of times one number is contained within another.
+     *
      * @param a - dividend
      * @param b - divisor
      * @return - quotient
      */
-    public double division(double a, double b) {
-        double x = a / b;
-        return x;
+    public double division(double a, double b) throws DivideByZeroException {
+        if (b != 0) {
+            double x = a / b;
+            return x;
+        } else {
+            throw new DivideByZeroException("The divisor cannot be zero.");
+        }
+
     }
 }

@@ -1,13 +1,14 @@
 package com.epam.testautomation;
 
 import com.epam.testautomation.impl.Calculator;
+import exceptions.DivideByZeroException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CalculatorTest {
 
     @Test
-    public void CalculatorTest() {
+    public void CalculatorTest() throws DivideByZeroException {
         Calculator calc = new Calculator();
         double a = 3;
         double b = 2;
