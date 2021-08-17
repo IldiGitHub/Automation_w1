@@ -47,6 +47,6 @@ public class ScientificCalculatorTest {
 
     @Test(expectedExceptions = DivideByZeroException.class)
     public void divideByZeroTest() throws DivideByZeroException {
-        Assert.assertEquals(scientificCalc.division(a, 0), 2);
+        scientificCalc.division(a, 0);
     }
 }
