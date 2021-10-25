@@ -1,6 +1,9 @@
 package com.epam.testautomation.impl.api;
 
+import lombok.Data;
+
+@Data
 public class Support {
-    public String url;
-    public String text;
+    private String url;
+    private String text;
 }
