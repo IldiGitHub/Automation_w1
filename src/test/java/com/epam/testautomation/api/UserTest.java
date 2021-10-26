@@ -9,8 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class UserTest {
-    private String GET_USER_URL = "https://reqres.in/api/users/";
+    private final String GET_USER_URL = "https://reqres.in/api/users/";
 
     public String setGetUserUrl(String parameter) {
         return GET_USER_URL + parameter;
@@ -32,10 +34,9 @@ public class UserTest {
                 .extract().body().as(User.class);
 
         Data data = user.getData();
-        Assert.assertEquals(data.getEmail(), "janet.weaver@reqres.in");
-        Assert.assertEquals(data.getFirst_name(), "Janet");
-        Assert.assertEquals(data.getLast_name(), "Weaver");
-
+        assertThat(data.getEmail()).isEqualTo("janet.weaver@reqres.in");
+        assertThat(data.getFirst_name()).isEqualTo("Janet");
+        assertThat(data.getLast_name()).isEqualTo("Weaver");
     }
 
     @Test

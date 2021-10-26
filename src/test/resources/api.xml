@@ -5,6 +5,8 @@
         <classes>
             <class name="com.epam.testautomation.api.UserListTest"/>
             <class name="com.epam.testautomation.api.UserTest"/>
+            <class name="com.epam.testautomation.api.CreateUserTest"/>
+            <class name="com.epam.testautomation.api.RegisterTest"/>
         </classes>
     </test>
 </suite>

@@ -1,10 +1,7 @@
 package com.epam.testautomation.impl.api;
 
+@lombok.Data
 public class User {
-    public Data data;
-    public Support support;
-
-    public Data getData() {
-        return this.data;
-    }
+    private Data data;
+    private Support support;
 }
