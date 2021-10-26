@@ -1,12 +1,9 @@
 package com.epam.testautomation.impl.api;
 
 import lombok.Data;
-import lombok.Getter;
 
 @Data
 public class ReqResUser {
-
-    @Getter
     private String name;
     private String job;
     private String id;
